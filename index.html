@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Nama Lengkap</title>
+    <style>
+        /* --- Reset & Pengaturan Dasar --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Navigasi Atas --- */
+        nav {
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Hero Section (Sambutan Utama) --- */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Tombol Utama */
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #333;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #555;
+        }
+
+        /* --- Bagian Layanan / Keahlian --- */
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .services-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Gaya Kotak (Card) */
+        .card {
+            flex: 1;
+            border: 2px solid #333;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            border-bottom: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .card-body li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+            font-size: 0.95rem;
+        }
+
+        .card-body li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* --- Bagian CTA (Call to Action) --- */
+        .cta-box {
+            border: 2px solid #333;
+            border-radius: 4px;
+            padding: 30px;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-bottom: 50px;
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .cta-box p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            border-top: 2px solid #333;
+            padding-top: 20px;
+            margin-top: auto;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* --- Media Query untuk Responsive (HP) --- */
+        @media (max-width: 600px) {
+            .services-grid {
+                flex-direction: column; /* Ubah jadi vertikal di HP */
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a href="cv.html">Download CV</a></li>
+            <li>|</li>
+            <li><a href="kontak.html">Contact</a></li>
+            <li>|</li>
+            <li><a href="about.html">About me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>
+            Hi, saya adalah web developer. Saya senang membangun website yang rapi, 
+            responsif, dan mudah digunakan. Mari berkolaborasi!
+        </p>
+        <a href="#" class="btn-primary">Lihat Portofolio</a>
+    </section>
+
+    <!-- Bagian Layanan / Keahlian -->
+    <h2 class="section-title">Apa yang Saya Lakukan</h2>
+    <div class="services-grid">
+        
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">Web Design</div>
+            <div class="card-body">
+                <p>Merancang tampilan website yang modern dan sesuai kebutuhan.</p>
+                <ul>
+                    <li>Wireframe & Mockup</li>
+                    <li>UI/UX Dasar</li>
+                    <li>Responsive Layout</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">Web Development</div>
+            <div class="card-body">
+                <p>Membangun website dari nol menggunakan teknologi web terkini.</p>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Javascript Dasar</li>
+                    <li>Integrasi API</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-header">Maintenance</div>
+            <div class="card-body">
+                <p>Memastikan website tetap berjalan lancar dan up-to-date.</p>
+                <ul>
+                    <li>Update Konten</li>
+                    <li>Perbaikan Bug</li>
+                    <li>Optimasi Kecepatan</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bagian CTA -->
+    <div class="cta-box">
+        <h3>Tertarik Bekerja Sama?</h3>
+        <p>Jangan ragu untuk menghubungi saya dan diskusikan proyek Anda.</p>
+        <a href="#" class="btn-primary">Hubungi Saya</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright 2020 &copy; Nama pemilik.</p>
+    </footer>
+
+</body>
+</html>
